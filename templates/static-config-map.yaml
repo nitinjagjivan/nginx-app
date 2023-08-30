@@ -1,0 +1,123 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: static-config-map
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energon Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #2e6c80;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        color: #2e6c80;
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      table {
+        width: 25%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
+      }
+
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: silver; /* Changed background color to silver */
+        color: white;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 2rem;
+        color: #666;
+        font-size: 1.2rem;
+      }
+
+      .container {
+        position: relative;
+        overflow: hidden;
+        width: 25%;
+        height: 1.6rem;
+        background-color: #ffffff;
+      }
+
+      .scrollbar {
+        width: 1.6rem;
+        height: 25%;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+      }
+    </style>
+    </head>
+    <body>
+      <header>
+        <h1>Welcome to the Energon Home Page</h1>
+        <h2>Energon Squad for Infrastructure Tooling</h2>
+      </header>
+      <main>
+        <h2>Members:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cameron Bosnic</td>
+            </tr>
+            <tr>
+              <td>Sabrina Yee</td>
+            </tr>
+            <tr>
+              <td>Paul Nott</td>
+            </tr>
+            <tr>
+              <td>Nitin Jagjivan</td>
+            </tr>
+            <tr>
+              <td>Rajashri Chitrakar</td>
+            </tr>
+            <tr>
+              <td>Ajay Kumar Patel</td>
+            </tr>
+            <tr>
+              <td>Mark Mon Monteros</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Version 1.0</p>
+      </main>
+    </body>
+    </html>
