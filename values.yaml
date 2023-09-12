@@ -529,7 +529,7 @@ staticSitePVC: ""
 service:
   ## @param service.type Service type
   ##
-  type: ClusterIP
+  type: Nodeport
   ## @param service.ports.http Service HTTP port
   ## @param service.ports.https Service HTTPS port
   ##
@@ -541,8 +541,8 @@ service:
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
   ##
   nodePorts:
-    http: ""
-    https: ""
+    http: "31001"
+    https: "31002"
   ## @param service.targetPort [object] Target port reference value for the Loadbalancer service types can be specified explicitly.
   ## Listeners for the Loadbalancer can be custom mapped to the http or https service.
   ## Example: Mapping the https listener to targetPort http [http: https]
